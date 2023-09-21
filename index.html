@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="script/script_geral.js"></script>
+
+    <link rel="stylesheet" href="style/sidebar.css">
+
+    <link rel="stylesheet" href="style/geral.css">
+
+    <link rel="stylesheet" href="style/style_home.css">
+
+</head>
+
+
+
+
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">      
+        <div class="menu" onclick="openNav()">
+            <span  class="hamburguer"></span>
+        </div>
+    </label>
+
+    <nav id="mySidebar" class="sidebar">
+        
+        <div class="item">
+            <a href="index.html">
+                <i class="fas fa-desktop"> Home</i></a>
+        </div>
+
+        <div class="item">
+            <a class="sub-btn">
+                <i class="fas fa-table"> Dashboard</i>               
+                <i class="fas fa-angle-right dropdown">
+                </i></a>
+            <div class="sub-menu">
+              <a href="#" class="sub-item"> Metano</a>
+              <a href="#" class="sub-item"> Temperatura/Umidade</a>
+              <a href="#" class="sub-item"> CO<sub>2</sub></a>
+            </div>
+        </div>
+
+        <div class="item">
+            <a href="index.html">
+                <i class="fas fa-info-circle"> Suporte</i></a>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->    
+    <main>
+        <div id="content">
+            <div class="container-1">
+                <h2>Monitoramento de Parâmetros Físico Químicos de um Biodigestor</h2>
+            </div>
+           
+            <div class="container-conteudo">
+                <div class="container-2">
+                    <h3>MOTIVAÇÃO</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente aut expedita ratione! Molestiae blanditiis necessitatibus fugit nihil odit quae laboriosam? Blanditiis id laudantium voluptates culpa quam mollitia quae. Pariatur, sunt.</p>
+                </div>
+                <div class="container-2">
+                    <h3>APLICAÇÃO</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente aut expedita ratione! Molestiae blanditiis necessitatibus fugit nihil odit quae laboriosam? Blanditiis id laudantium voluptates culpa quam mollitia quae. Pariatur, sunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem rem ea iste facere cupiditate est consequuntur recusandae, debitis illo. Tempora nisi distinctio consequatur quo quis? Sint laudantium possimus non. Exercitationem.</p>
+                </div>
+                <div class="container-2">
+                    <h3>CONCLUSÃO</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente aut expedita ratione! Molestiae blanditiis necessitatibus fugit nihil odit quae laboriosam? Blanditiis id laudantium voluptates culpa quam mollitia quae. Pariatur, sunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem rem ea iste facere cupiditate est consequuntur recusandae, debitis illo. Tempora nisi distinctio consequatur quo quis? Sint laudantium possimus non. Exercitationem.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="fixar-rodape">
+        <p>Desenvolvido pelo graduando de engenharia de biossistemas <a  href="https://www.linkedin.com/in/vitor-manoel-rezende" target="_blank">Vitor Manoel Rezende</a>!</p>
+    </footer>
+</body>
+
+</html>

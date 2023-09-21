@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+.menu {
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.404);
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    cursor: pointer;
+    top: 15px;
+    left: 25px;
+    z-index: 1;
+}
+
+.hamburguer {
+    position: relative;
+    display: block;
+    background: black;
+    width: 30px;
+    height: 2px;
+    top: 24px;
+    left: 11px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 2px 2px 4px orange;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    background:black;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+    top: -10px;
+}
+
+.hamburguer:after {
+    bottom: -10px;
+}
+
+input {
+    display: none;
+}
+
+input:checked~label .hamburguer {
+    transform: rotate(45deg);
+}
+
+input:checked~label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+input:checked~label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    padding-top: 70px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: rgb(10, 9, 9);
+    transition: .5s;
+    box-shadow: 2px 1px 8px black;
+}
+
+.sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-align: justify;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+}
+
+.sidebar .item{
+    position:relative;
+    cursor:pointer;
+  }
+  
+.sidebar .item a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+}
+  
+/* MUDAR ESSA COR ROXA */
+
+.sidebar .item a:hover{
+    background: #8621F8;
+    transition: 0.5s ease;  
+}
+  
+.item i{
+    margin-right: 15px;
+}
+  
+.sidebar .item a .dropdown{
+    position: absolute;
+    right:0;
+    margin: 20px;
+    transition: 0.5s ease;
+}
+  
+  /* TROCAR ESSA COR CINZA */
+.sidebar .item .sub-menu{
+    background: #0A0909;
+    display:none;
+}
+  
+   .sidebar .item .sub-menu a{
+    padding-left: 80px;
+  }
+
+#content {
+    transition: margin-left .5s;
+    padding: 15px;
+}
+

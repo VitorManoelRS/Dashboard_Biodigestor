@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* Todas as demais mídias */
+/* Typical Device Breakpoints
+Pequenas Telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px */
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    /* CONFIG PARA TABLETS */
+    i#burguer{
+        display: none;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    #menu > ul > li {
+        display: inline-block;
+    }
+
+    main{
+        width: 768px;
+    }
+
+    ul#itens{
+        display: flex;
+        width: auto;
+    }
+
+    ul.dropdown-menu{
+        background-color: #008148;
+        border: 1px solid rgba(0, 0, 0, 0.400);
+        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.500);
+    }
+
+    .dropdown-item {
+        color: white;
+        text-align: start;
+        padding: 4px 16px;
+        text-shadow: 1px 1px 1px black;     
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    /* CONFIG PARA DESKTOP */
+
+    main{
+        width: 992px;
+        margin: auto;
+    }
+
+    i#burguer{
+        display: none;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    #menu > ul > li {
+        display: inline-block;
+    }
+
+    ul{
+        display: flex;
+        align-items: center;    
+        justify-content: space-evenly;  
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    ul#itens{
+        display: flex;
+        width: auto;
+    }
+
+    ul.dropdown-menu{
+        background-color: #008148;
+        border: 1px solid rgba(0, 0, 0, 0.400);
+        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.500);
+    }
+
+    .dropdown-item {
+        color: white;
+        text-align: start;
+        padding: 4px 16px;
+        text-shadow: 1px 1px 1px black;     
+    }
+
+    div.container-conteudo{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    div.container-2{
+        display: block;
+    
+        margin: auto;
+        margin: 50px 20px 60px 20px;
+    }
+
+    div.formatos > a > img{
+        height: 65px;
+        width: 65px;
+    }
+
+    div.container-tela{
+        width: 900px;
+        height: 400px;
+    }
+
+}
