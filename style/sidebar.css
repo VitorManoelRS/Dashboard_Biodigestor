@@ -131,6 +131,6 @@ input:checked~label .hamburguer:after {
 
 #content {
     transition: margin-left .5s;
-    padding: 15px;
+    height: 91vh;
 }
 
