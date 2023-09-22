@@ -105,6 +105,8 @@ input:checked~label .hamburguer:after {
 
 .sidebar .item a:hover{
     background: #8621F8;
+    color: black;
+    font-weight: bolder;
     transition: 0.5s ease;  
 }
   
@@ -118,6 +120,9 @@ input:checked~label .hamburguer:after {
     margin: 20px;
     transition: 0.5s ease;
 }
+
+
+
   
   /* TROCAR ESSA COR CINZA */
 .sidebar .item .sub-menu{
@@ -125,12 +130,18 @@ input:checked~label .hamburguer:after {
     display:none;
 }
   
-   .sidebar .item .sub-menu a{
+.sidebar .item .sub-menu a{
     padding-left: 80px;
-  }
+}
+
+.sidebar .item .sub-menu a:hover{
+    background: #ff8737;
+    color: black;
+    font-weight: bolder;
+    transition: 0.5s ease;  
+}
 
 #content {
     transition: margin-left .5s;
-    height: 91vh;
 }
 

@@ -9,39 +9,11 @@ Grandes telas: acima de 1200px */
 
 @media screen and (min-width: 768px) and (max-width: 992px){
     /* CONFIG PARA TABLETS */
-    i#burguer{
-        display: none;
-    }
-
-    #menu{
-        display: block;
-    }
-
-    #menu > ul > li {
-        display: inline-block;
-    }
 
     main{
         width: 768px;
     }
 
-    ul#itens{
-        display: flex;
-        width: auto;
-    }
-
-    ul.dropdown-menu{
-        background-color: #008148;
-        border: 1px solid rgba(0, 0, 0, 0.400);
-        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.500);
-    }
-
-    .dropdown-item {
-        color: white;
-        text-align: start;
-        padding: 4px 16px;
-        text-shadow: 1px 1px 1px black;     
-    }
 }
 
 
@@ -53,62 +25,30 @@ Grandes telas: acima de 1200px */
         margin: auto;
     }
 
-    i#burguer{
-        display: none;
-    }
-
-    #menu{
-        display: block;
-    }
-
-    #menu > ul > li {
-        display: inline-block;
-    }
-
-    ul{
-        display: flex;
-        align-items: center;    
-        justify-content: space-evenly;  
-        text-decoration: none;
-        list-style: none;
-    }
-    
-    ul#itens{
-        display: flex;
-        width: auto;
-    }
-
-    ul.dropdown-menu{
-        background-color: #008148;
-        border: 1px solid rgba(0, 0, 0, 0.400);
-        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.500);
-    }
-
-    .dropdown-item {
-        color: white;
-        text-align: start;
-        padding: 4px 16px;
-        text-shadow: 1px 1px 1px black;     
-    }
-
     div.container-conteudo{
         display: flex;
         align-items: baseline;
         justify-content: space-between;
     }
 
+    div.container-1 > h2{
+        font-size: 1.5em;        
+    }
+
     div.container-2{
         display: block;
-    
         margin: auto;
         margin: 50px 20px 60px 20px;
     }
 
+
+
     div.formatos > a > img{
-        height: 65px;
-        width: 65px;
+        height: 50px;
+        width: 50px;
     }
 
+    /* PRECISA CONFERIR ISTO */
     div.container-tela{
         width: 900px;
         height: 400px;

@@ -13,13 +13,14 @@ div.container-1{
     border: 2px solid #8621F8;
     border-radius: 10px 0px;
 
-    background-color: #252328;
+    background-color: #282323;
 }
 
 div.container-1 > h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
-    color: #cecece;
+    /* color: #cecece; */
+    color: #ff8737;
     text-align: center;
     text-shadow: 1px 1px 4px black;
 }
@@ -31,15 +32,15 @@ div.container-conteudo{
 
 div.container-2{
     display: block;
-    width: 80%;
+    width: 60%;
 
     margin-bottom: 50px;
     text-align: justify;
     border: 1px solid rgba(0, 0, 0, 0.363);
-    box-shadow: 2px 2px 10px #4443438c;
+    box-shadow: 2px 2px 10px #0000008c;
 
     background-color: #252328;
-    color: #FCECC8;
+    color: #fff;
     padding: 10px;
     border-radius: 10px;
 }
@@ -47,6 +48,11 @@ div.container-2{
 div.container-2 > h3{
     text-align: center;
     color: #8621F8;
+    text-shadow: .3px .3px 6px #000000;
     text-decoration: underline;
+}
+
+div.container-2 > p{
+    padding: 5px;
 }
 
