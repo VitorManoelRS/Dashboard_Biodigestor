@@ -65,38 +65,28 @@
 
     <main>
         <div class="container-1">
-            <h2>METANO (CH<sub>4</sub>)</h2>            
+            <h2>DASHBOARD</h2>            
         </div>
 
-        <div class="container-dashboard">
-            <div class="lastdata">
-                <!-- DATA DO ULTIMO DADO LIDO -->
-            </div>
+        <div class="botoes">
+            <button id="btn_ch4">
+                <p>CH<sub>4</sub></p>
+            </button>
 
-            <div class="lastvalue">
-                <!-- VALOR DO ULTIMO DADO LIDO -->
-            </div>
+            <button id="btn_nh3">
+                <p>NH<sub>3</sub></p>
+            </button>
 
-            <div class="">
-                <!-- PICO MAIS ALTO DO DIA -->
-            </div>
-
-            <div class="">
-                <!-- PICO BAIXO ALTO DO DIA -->
-            </div>
-
-            <div class="limiteSup">
-                <!-- LIMITE SUPERIOR DE PPM -->
-            </div>
-
-            <div class="limiteInf">
-                <!-- LIMITE INFERIOR DE PPM -->
-            </div>
+            <button id="btn_co2">
+                <p>CO<sub>2</sub></p>
+            </button>
+            
         </div>
 
-        <div class="container-tela">
-            <iframe src="" name="tela" id="tela" frameborder="0">
-            </iframe>
+        <div class="container_grafico">
+            <canvas id="myChart">
+
+            </canvas>            
         </div>
 
     </main>
