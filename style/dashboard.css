@@ -66,8 +66,8 @@ div.container_grafico{
     width: 75%;
     height: 290px;
 
-    background-color: rgba(0, 34, 107, 0.274);
-
+    background-color: #000d2946;
+color: crimson;
     border: 1px solid rgba(0, 0, 0, 0.300);
     box-shadow: 1px 1px 8px black;
     display: flex;

@@ -29,13 +29,13 @@ const percentInput = document.getElementById('concentracao_percent');
                 tension: 0.1,
                 data: data.data,
                 fill: true,
-                backgroundColor:gradient
+                backgroundColor: gradient
               }]
             },
   
             options: {
               responsive: true,
-              hoverRadius:5,  
+              hoverRadius:5,
               scales: {
                 x: {    //LEGENDA DO EIXO X
                   display: true,
@@ -72,7 +72,6 @@ const percentInput = document.getElementById('concentracao_percent');
   
           //CRIA O GRÁFICO
           var chart = new Chart(ctx, config);
-          chart.defaults.color = '#f0f';
         });
   
         
