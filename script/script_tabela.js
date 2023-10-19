@@ -53,7 +53,7 @@ $(document).ready(function () {
 
     // Agora você já recebeu os dados do PHP por meio de uma solicitação AJAX
     $.ajax({
-        url: 'http://localhost/tcc/web/Dashboard_Biodigestor/data/teste.php',
+        url: 'http://192.168.1.102/tcc/web/Dashboard_Biodigestor/data/teste.php',
         method: 'GET',
         dataType: 'json',
         success: function (response) {

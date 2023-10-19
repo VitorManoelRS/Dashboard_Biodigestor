@@ -16,7 +16,7 @@ var x=0;
 
 // Função para buscar dados de Metano em ppm
 function data_MQ4() {
-  return fetch('http://localhost/tcc/web/Dashboard_Biodigestor/data/dados_MQ4.php')
+  return fetch('http://192.168.1.102/tcc/web/Dashboard_Biodigestor/data/dados_MQ4.php')
     .then(response => response.json())
     .then(data => {
       return data; // Retorna os dados JSON de CH4 em ppm
@@ -25,7 +25,7 @@ function data_MQ4() {
   
   // Função para buscar dados de Metano em percentagem
 function data_MQ135() {
-  return fetch('http://localhost/tcc/web/Dashboard_Biodigestor/data/dados_MQ135.php')
+  return fetch('http://192.168.1.102/tcc/web/Dashboard_Biodigestor/data/dados_MQ135.php')
     .then(response => response.json())
     .then(data => {
       return data; // Retorna os dados JSON de CO2 e NH3 em ppm
