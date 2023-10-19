@@ -34,10 +34,10 @@ footer.fixar-rodape{
     padding-top: 5px;
   }
 
-a{
+footer > p > a{
     color:#8621F8;
 }
 
-a:hover{
+footer > p > a:hover{
     color: #90FCF9;
 }

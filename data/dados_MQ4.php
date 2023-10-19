@@ -10,7 +10,7 @@ $database = 'tcc'; // nome do banco de dados
 
 $mysqli = new mysqli($host, $username, $password, $database);
 
-$qnt_valores = -10; // Limite para a quantidade de dados que aparecem no gráfico
+$qnt_valores = -25; // Limite para a quantidade de dados que aparecem no gráfico
 
 // Verifica se houve erro na conexão
 if ($mysqli->connect_errno) {

@@ -10,14 +10,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
     <script src="../script/script_geral.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-
-    <link rel="stylesheet" href="../style/dashboard.css">
+    <link rel="stylesheet" href="../style/tabela.css">
 
     <link rel="stylesheet" href="../style/geral.css">
 
@@ -47,46 +46,55 @@
 
         <div class="item">
             <a class="sub-btn">
-                <i class="fas fa-table"> Dashboard</i>               
+                <i class="fas fa-chart-line"> Dashboard</i>               
                 <i class="fas fa-angle-right dropdown">
                 </i></a>
             <div class="sub-menu">
-              <a href="pages/metano.html" class="sub-item"> Metano</a>
-              <a href="pages/temp_umid.html" class="sub-item"> Temperatura/Umidade</a>
-              <a href="pages/co2.html" class="sub-item"> CO<sub>2</sub></a>
+              <a href="dados_Metano.html" class="sub-item"> Metano</a>
+              <a href="temp_umid.html" class="sub-item"> Temperatura/Umidade</a>
+              <a href="dados_CO2.html" class="sub-item"> CO<sub>2</sub></a>
             </div>
+        </div>
+    
+        <div class="item">
+            <a href="Table.html">
+                <i class="fas fa-table"> Table</i></a>
         </div>
 
         <div class="item">
             <a href="index.html">
-                <i class="fas fa-info-circle"> Suporte</i></a>
+                <i class="fas fa-info-circle"> Suport</i></a>
         </div>
     </nav>
 
     <main>
         <div class="container-1">
-            <h2>Escolha o formato que os dados devem ser apresentados:</h2>
-            <div class="formatos">
-                <a href="Graficos/Grafico_Metano.html" target="tela" id="graf">
-                    <img src="../imagens/graf_ico.png" id="graf" alt="Ícone de um gráfico">
-                </a>
-                <a href="http://localhost/tcc/dados.php" target="tela" id="tab">
-                    <img src="../imagens/tab_ico.png" id="tab" alt="Ícone de uma tabela">
-                </a>
-            </div>
+            <h2>Table Data</h2>            
         </div>
 
-        <div class="container-tela">
-            <iframe src="" name="tela" id="tela" frameborder="0">
-            </iframe>
+        <div id="paginacao" class="pagination">
+            <!-- Os links de paginação serão preenchidos aqui dinamicamente -->
         </div>
+    
+        <div class="container_tabela">            
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Time</th>
+                        <th>Metano_ppm</th>
+                    </tr>
+                </thead>
+                <tbody id="dados">
+                    <!-- Os dados serão preenchidos aqui dinamicamente -->
+                </tbody>
+            </table>
+        </div>
+        
+        
 
-    </main>
-
-
-    <footer class="fixar-rodape">
-        <p>Desenvolvido pelo graduando de engenharia de biossistemas <a  href="https://github.com/VitorManoelRS" target="_blank">Vitor Manoel Rezende</a>!</p>
-    </footer>
+    </main>  
+    <script src="script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
       
