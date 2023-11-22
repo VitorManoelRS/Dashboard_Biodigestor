@@ -20,6 +20,7 @@ div.container-1 > h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     /* color: #cecece; */
+    font-size: 1.5em;
     color: #ff8737;
     text-align: center;
     text-shadow: 1px 1px 4px black;
